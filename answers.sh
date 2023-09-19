@@ -52,3 +52,31 @@ SELECT Company FROM employees
 WHERE Role = "Graphic Designer
 
 ----------------
+SELECT * from students
+ORDER BY Points DESC
+LIMIT 1 ;
+
+---------------
+
+SELECT AVG(points) AS average_points
+FROM students;
+
+-----------
+
+SELECT COUNT(*) AS num_students
+FROM students
+WHERE Points = 500;
+
+------------
+
+SELECT Name
+FROM students
+WHERE Name LIKE '%s%';
+
+-----------
+
+SELECT *
+FROM students
+ORDER BY Points DESC;
+
+-------------
