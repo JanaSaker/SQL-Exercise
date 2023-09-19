@@ -34,3 +34,21 @@ WHERE Name = 'Layal';
 ---------- Remove Layal's record from 'students'
 DELETE FROM students WHERE Name = 'Layal';
 
+-----------create a table and make a join
+CREATE TABLE Info AS 
+SELECT employees.name , employees.Company, companies.date
+FROM employees 
+INNER JOIN companies
+ON employees.company = companies.name"
+
+--------------
+
+SELECT name FROM Info
+WHERE date < 2000
+
+--------------
+
+SELECT Company FROM employees
+WHERE Role = "Graphic Designer
+
+----------------
